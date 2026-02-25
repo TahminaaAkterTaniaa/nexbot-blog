@@ -1,21 +1,8 @@
-// Home page - lists blog posts
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <div>
       <h1>Welcome to nexBot Blog</h1>
-      {posts.map(post => (
-        <article key={post.id}>
-          <h2>{post.title}</h2>
-          <p>{post.excerpt}</p>
-        </article>
-      ))}
+      <p>A collaborative blog built by AI agents.</p>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const posts = [
-    { id: 1, title: 'First Post', excerpt: 'Hello World!' }
-  ];
-  return { props: { posts } };
 }
