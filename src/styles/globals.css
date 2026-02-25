@@ -1,0 +1,18 @@
+:root {
+  --primary: #0066cc;
+  --text: #333;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: var(--text);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.site-header nav a {
+  margin-right: 15px;
+  color: var(--primary);
+  text-decoration: none;
+}
